@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f7f7f7;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #222;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  max-width: 1170px;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+.nav-links a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #222;
+  font-size: 1rem;
+}
+.nav-icons {
+  display: flex;
+  gap: 1rem;
+}
+.nav-icons a {
+  transition: all 0.25s linear;
+  color: #3fd0d4;
+  font-size: 1.2rem;
+}
+.hero {
+  background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
+    url(image\ 4.jpg) center/cover;
+  height: calc(100vh - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-title {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 2rem;
+  letter-spacing: 0.4rem;
+}
+.hero-text {
+  color: white;
+  letter-spacing: 0.3rem;
+  line-height: 2;
+  margin-bottom: 4rem;
+  width: 70%;
+  margin: 0 auto;
+}
+.hero-link {
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  border: 2px solid;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  letter-spacing: 0.25rem;
+  transition: all 0.25s linear;
+  margin-top: 2rem;
+}
+.hero-link:hover {
+  background-color: white;
+  color: #3fd0d4;
+}
+.about {
+  background-color: white;
+}
+.section-center {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.featured {
+  background-color: white;
+}
+.about-img {
+  flex: 0 0 calc(50% - 2rem);
+}
+.about-img img {
+  width: 100%;
+}
+.about-info {
+  flex: 0 0 calc(50% - 2rem);
+  align-self: center;
+}
+.section {
+  padding: 5rem 0;
+}
+
+.title {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.subtitle {
+  color: #3fd0d4;
+}
+
+.nav-links a:hover {
+  color: aqua;
+}
+.nav-icons a:hover {
+  color: gray;
+  transform: translateY(-10%);
+}
+.service {
+  display: flex;
+  gap: 1rem;
+}
+.album {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery-pic {
+  position: relative;
+  flex: 0 0 25%;
+  background-color: #3fd0d4;
+}
+.gallery-pic span {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gallery-pic img {
+  display: block;
+  width: 100%;
+}
+.gallery-pic:hover span {
+  opacity: 1;
+}
+.gallery-pic:hover img {
+  opacity: 0.5;
+}
+
+.service i {
+  background-color: #3fd0d4;
+  padding: 0.75rem;
+  font-size: 2rem;
+}
+.service h4 {
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.tour-cart {
+  flex: 0 0 calc(33% - 1rem);
+}
+.tour-cart img {
+  width: 100%;
+}
+.tour-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tour-image {
+  position: relative;
+}
+.tour-image p {
+  position: absolute;
+  top: 0;
+  background-color: #3fd0d4;
+}
+
+.tour-footer {
+  padding: 1.2rem 1.5rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  border: 2px solid #3fd0d4;
+  background-color: #3fd0d4;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.9rem 1.6rem;
+  letter-spacing: 0.25rem;
+}
+.all-tours {
+  text-align: center;
+}
+.btn-primary:hover {
+  background-color: transparent;
+  color: #3fd0d4;
+}
+
+.about-info h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  margin-bottom: 1.25rem;
+  font-size: 2rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  line-height: 2;
+  font-weight: 300;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+}
+input[type="email"] {
+  flex: 1 1 auto;
+  border-right: none;
+}
+input::placeholder {
+  color: #222;
+}
+
+input {
+  border: 2px solid #3fd0d4;
+  padding: 0.375rem 0.75rem;
+  background-color: transparent;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 1rem;
+  color: black;
+  outline: none;
+  transition: all 0.25s linear;
+}
+input[type="submit"]:hover {
+  background-color: #3fd0d4;
+  color: white;
+}
+.footer .nav-links,
+footer .nav-icons {
+  justify-content: center;
+  color: white;
+}
+.footer .nav-links a,
+.footer .nav-icons i {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+.footer a:hover {
+  color: #3fd0d4;
+}
